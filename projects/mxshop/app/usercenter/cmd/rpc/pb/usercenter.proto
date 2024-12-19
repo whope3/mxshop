@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+message SignOutReq {
+  string mobile = 1;
+  string name = 2;
+
+  string password = 3;
+}
+
+message SignOutResp {
+  int64 uid = 1;
+  string user_name = 2;
+  string phone_number = 3;
+}
+
+service UserService {
+  rpc SignOut (SignOutReq) returns (SignOutResp);
+}

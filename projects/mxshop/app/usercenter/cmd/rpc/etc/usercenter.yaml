@@ -1,0 +1,12 @@
+Name: usercenter.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: usercenter.rpc
+
+MysqlConf:
+  Uri: root:a12bCd3_W45pUq6@tcp(192.168.1.102:3306)/usercenter?charset=utf8mb4&parseTime=True&loc=Local
+
+RedisConf:
+  Host: 192.168.1.102:6379

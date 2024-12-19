@@ -1,0 +1,26 @@
+syntax = "v1"
+
+info(
+    title: "type title here"
+    desc: "type desc here"
+    author: "type author here"
+    email: "type email here"
+    version: "type version here"
+)
+
+
+type SignOutReq {
+    telephone int64 `json:"phone"` // phone number
+    user_name string `json:"username"` // username
+    password string `json:"password"` // password
+    confirmed_pass string `json:"confirmedPassword"` // confirmed password
+}
+
+type SignInReq {
+    phone int64 `json:"phone"` // phone number
+    password string `json:"password"` // password
+}
+
+//type RegistrationResp {
+//
+//}
